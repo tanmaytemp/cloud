@@ -23,4 +23,9 @@ public class ConcCityService implements CityService {
     public void post(City city) {
         dao.save(city);
     }
+
+    @Override
+    public ArrayList<City> filter() {
+        return dao.filter();
+    }
 }
