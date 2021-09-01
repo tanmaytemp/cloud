@@ -25,6 +25,11 @@ public class MyController {
         return service.getCities();
     }
 
+    @RequestMapping(method = RequestMethod.GET, value = "/city/filter")
+    ArrayList<City> filters(){
+        return service.filter();
+    }
+
     @RequestMapping(method = RequestMethod.POST, value = "/city")
     String post(@RequestBody ArrayList<City> list){
         for (City c : list){
@@ -32,4 +37,5 @@ public class MyController {
         }
         return "Successful";
     }
+
 }
