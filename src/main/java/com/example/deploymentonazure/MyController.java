@@ -14,6 +14,12 @@ public class MyController {
     @Autowired
     CityService service;
 
+    @RequestMapping(method = RequestMethod.GET, value = "")
+    String home(){
+        return "Welcome to my first successful Azure Microservice deployment. Please show some love :) ";
+    }
+
+
     @RequestMapping(method = RequestMethod.GET, value= "/city")
     ArrayList<City> gets(){
         return service.getCities();
