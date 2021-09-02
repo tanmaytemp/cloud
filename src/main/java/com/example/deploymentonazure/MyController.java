@@ -16,7 +16,7 @@ public class MyController {
 
     @RequestMapping(method = RequestMethod.GET, value = "")
     String home(){
-        return "Welcome to my first successful Azure Microservice deployment. Please show some love :) ";
+        return "Welcome to my first Azure Microservice deployment. Please show some love :) ";
     }
 
 
