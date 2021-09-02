@@ -35,7 +35,7 @@ public class MyController {
         for (City c : list){
             service.post(c);
         }
-        return "Successful";
+        return "Successfully posted";
     }
 
 }
