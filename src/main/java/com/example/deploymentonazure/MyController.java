@@ -25,6 +25,11 @@ public class MyController {
         return service.getCities();
     }
 
+    @RequestMapping(method = RequestMethod.GET, value= "/home")
+    String homes(){
+        return "Welcome to the home of the API";
+    }
+
     @RequestMapping(method = RequestMethod.GET, value = "/city/filter")
     ArrayList<City> filters(){
         return service.filter();
